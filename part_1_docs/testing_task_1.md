@@ -18,24 +18,24 @@ class CardGame:
 
 
   def check_for_ace(self, card):
-    #if card.value = 1:
+    if card.value = 1: # need to be equate(==) sign here 
       return True
-    #else
+    else              # next to else is colon (:) required
       return False
    
 
-  #dif highest_card(self, card1 card2):
+  dif highest_card(self, card1 card2): # spelling mistake of def
   if card1.value > card2.value:
-    #return card
+    return card       # there is no card object here, needs to be card1
   else:
     return card2
   
 
 
 def cards_total(self, cards):
-  #total
+  total            # total is not assigned any value here, so when doing total += card.value the total will be un assigned and cant be computed
   for card in cards:
     total += card.value
-    #return "You have a total of" + total
+    return "You have a total of" + total  # cant concatenate string and integer need to convert total into string first before concatination
   
 ```
